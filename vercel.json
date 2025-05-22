@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "rewrites": [{ "source": "/about", "destination": "/about.html" }],
+  "redirects": [],
+  "headers": [],
+  "trailingSlash": false
+}
