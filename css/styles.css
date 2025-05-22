@@ -707,6 +707,9 @@ hr {
   margin-bottom: 3rem;
 }
 
+.foot-pp span {
+  border-bottom: 2px solid #d4f063;
+}
 /* ============================== */
 .form {
   display: flex;

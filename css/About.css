@@ -587,6 +587,10 @@ button:hover {
   transform: translateY(0);
 }
 
+.foot-ppp span {
+  border-bottom: 2px solid #d4f063;
+}
+
 /* ========== media query ========== */
 
 @media (min-width: 768px) {
