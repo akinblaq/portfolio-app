@@ -1,0 +1,641 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.body {
+  color: #fff;
+}
+
+.aboutt {
+  margin-top: 3rem;
+  height: 810px;
+  width: 390px;
+  margin-left: 2rem;
+}
+
+.about-me-cardd {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  margin-bottom: 3rem;
+}
+
+.about-mee {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 76px;
+  line-height: 90%;
+  letter-spacing: 0%;
+}
+
+.div-onee {
+  width: 343px;
+  padding-bottom: 1rem;
+}
+
+.div-twoo {
+  width: 343px;
+  padding-right: 2rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.card-11 {
+  margin-bottom: 2rem;
+  width: 343px;
+}
+
+.card-11 h4 {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.card-11-p {
+  color: #a5a4a4;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.card-22 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.hero-buttonss {
+  display: flex;
+  gap: 1rem;
+  width: 400px;
+}
+
+.btn-primaryy {
+  padding: 0.5rem 0.2rem 0.5rem 0.5rem;
+  border: none;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  background-color: var(--accent);
+  color: #000;
+  width: 220px;
+  gap: 0.7rem;
+  position: relative;
+}
+
+.btn-primaryy:hover {
+  background-color: #448b86;
+}
+
+.div-icon-dadd {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.im11 {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.im11:hover {
+  background-color: rgb(54, 62, 62);
+}
+
+.im11 img {
+  width: 50%;
+}
+
+.circlee {
+  position: absolute;
+  right: 0.5rem;
+}
+
+/* media query =========================== */
+@media (min-width: 768px) {
+  .circlee {
+    display: none;
+  }
+
+  #aboutt {
+    border-bottom: 1px solid #363535;
+  }
+
+  .about-me-cardd {
+    flex-direction: row;
+    margin-top: 5rem;
+  }
+
+  .card-11 {
+    margin-bottom: 2rem;
+    width: 661px;
+  }
+
+  .aboutt {
+    padding: 0 0;
+    height: 661px;
+    margin: auto;
+    width: 1224px;
+  }
+
+  .div-onee {
+    width: 400px;
+    padding-left: 3rem;
+  }
+
+  .div-twoo {
+    width: 700px;
+    padding-right: 2rem;
+    font-family: "Manrope", sans-serif;
+  }
+}
+
+/* =============================== */
+
+#capa-section {
+  border-bottom: 1px solid #363535;
+}
+
+.capa-div {
+  width: 343px;
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.profile-pic {
+  height: 100%;
+  background-color: #fff;
+  margin-left: 2rem;
+}
+.profile-pic img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 0 2rem 5rem 2rem;
+  margin: auto;
+  background-color: #a5a4a4;
+}
+
+.capabilities {
+  display: flex;
+  flex-direction: column;
+  height: 401px;
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+
+.capabilities h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.div-right {
+  width: 343px;
+}
+
+.div-right p {
+  color: #a5a4a4;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.skills span {
+  background: #1a1a1a;
+  font-family: "Manrope", sans-serif;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid #444;
+}
+
+.skills span:hover {
+  background-color: rgb(54, 62, 62);
+}
+
+/* media =============================== */
+@media (min-width: 768px) {
+  #capa-section {
+    border-bottom: 1px solid #363535;
+  }
+
+  .capa-div {
+    width: 1224px;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .profile-pic {
+    height: 700px;
+    background-color: #fff;
+  }
+  .profile-pic img {
+    width: 43%;
+    border-radius: 12px;
+    margin: 0 2rem 5rem 2rem;
+    margin: auto;
+    background-color: #a5a4a4;
+  }
+
+  .capabilities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 401px;
+  }
+
+  .capabilities h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  .div-right {
+    width: 600px;
+  }
+
+  .div-right p {
+    color: #a5a4a4;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 2rem;
+  }
+
+  .skills span {
+    background: #1a1a1a;
+    font-family: "Manrope", sans-serif;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid #444;
+  }
+
+  .skills span:hover {
+    background-color: rgb(54, 62, 62);
+  }
+}
+
+/* ========================= */
+#exp-section {
+  border-bottom: 1px solid #363535;
+}
+
+.experience {
+  min-width: 343px;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+}
+
+.experience h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.jobs-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 343px;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-right: 3rem;
+}
+
+.year {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.year h4 {
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  line-height: 130%;
+  letter-spacing: -1%;
+  font-size: 24px;
+  color: #fff;
+}
+
+.job .span {
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  line-height: 130%;
+  letter-spacing: -1%;
+  font-size: 24px;
+  color: #a5a4a4;
+}
+
+.job p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #a5a4a4;
+}
+
+/* Responsive media */
+@media (min-width: 768px) {
+  #work {
+    margin-bottom: 3rem;
+  }
+  .experience {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1224px;
+    margin: auto;
+    height: 500px;
+    margin-top: 4rem;
+  }
+
+  .experience h3 {
+    font-size: 76px;
+  }
+
+  .jobs-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    width: 600px;
+  }
+
+  .job {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .year {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .year h4 {
+    margin-bottom: 1rem;
+  }
+}
+
+/* =================================== */
+
+/* Footer */
+.container-foott {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 0;
+  width: 343px;
+  height: 1200px;
+  margin-left: 2rem;
+}
+
+.foot-div-11 {
+  width: 343px;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-sepp p {
+  width: 343px;
+  padding-right: 3rem;
+  color: #a5a4a4;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-bottom: 1rem;
+}
+
+.div-sepp h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.img-iconn {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.im11 {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.im11:hover {
+  background-color: rgb(54, 62, 62);
+}
+
+.im11 img {
+  width: 50%;
+}
+
+.foot-div-11 p {
+  width: 550px;
+  padding-right: 3rem;
+  color: #a5a4a4;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.foot-pp {
+  position: absolute;
+  top: 236rem;
+  margin-bottom: 3rem;
+}
+
+/* ============================== */
+.formm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 3rem;
+  position: relative;
+  margin-right: 2rem;
+}
+
+label {
+  margin-bottom: 5px;
+  width: 330px;
+  padding-right: 3rem;
+  color: #888;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+button {
+  background-color: #d4f063;
+  color: #000;
+  border: none;
+  padding: 9px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-top: 2rem;
+}
+
+button:hover {
+  background-color: #448b86;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== media query ========== */
+
+@media (min-width: 768px) {
+  .container-foott {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 800px;
+    width: 1224px;
+    margin: auto;
+  }
+
+  .foot-div-11 {
+    width: 661px;
+  }
+
+  .div-sepp p {
+    width: 550px;
+  }
+
+  .div-sepp h2 {
+    font-size: 76px;
+  }
+
+  .foot-pp {
+    top: 216rem;
+  }
+
+  /* ============================== */
+  .formm {
+    width: 600px;
+  }
+
+  label {
+    width: 550px;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-animate {
+  animation: fadeSlideIn 0.7s ease-out both;
+}
