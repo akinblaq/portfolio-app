@@ -8,7 +8,8 @@
 .aboutt {
   margin-top: 3rem;
   height: 810px;
-  width: 390px;
+  min-width: 320;
+  max-width: 480;
   margin-left: 2rem;
 }
 
@@ -23,25 +24,22 @@
 .about-mee {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-size: 76px;
+  font-size: 35px;
   line-height: 90%;
   letter-spacing: 0%;
 }
 
 .div-onee {
-  width: 343px;
   padding-bottom: 1rem;
 }
 
 .div-twoo {
-  width: 343px;
   padding-right: 2rem;
   font-family: "Manrope", sans-serif;
 }
 
 .card-11 {
   margin-bottom: 2rem;
-  width: 343px;
 }
 
 .card-11 h4 {
@@ -52,7 +50,7 @@
   letter-spacing: 0%;
 }
 
-.card-11-p {
+.about-me-pp {
   color: #a5a4a4;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
@@ -73,7 +71,6 @@
 .hero-buttonss {
   display: flex;
   gap: 1rem;
-  width: 400px;
 }
 
 .btn-primaryy {
@@ -128,14 +125,18 @@
   right: 0.5rem;
 }
 
+.circles {
+  display: none;
+}
+
 /* media query =========================== */
 @media (min-width: 768px) {
   .circlee {
     display: none;
   }
 
-  #aboutt {
-    border-bottom: 1px solid #363535;
+  .circles {
+    display: block;
   }
 
   .about-me-cardd {
@@ -150,7 +151,7 @@
 
   .aboutt {
     padding: 0 0;
-    height: 661px;
+    height: 550px;
     margin: auto;
     width: 1224px;
   }
@@ -170,27 +171,28 @@
 /* =============================== */
 
 #capa-section {
+  margin-top: 10rem;
   border-bottom: 1px solid #363535;
 }
 
 .capa-div {
-  width: 343px;
-  margin: auto;
+  min-width: 320;
+  max-width: 480;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
+  margin-right: 2rem;
 }
 
 .profile-pic {
-  height: 100%;
   background-color: #fff;
   margin-left: 2rem;
 }
 .profile-pic img {
   width: 100%;
   border-radius: 12px;
-  margin: 0 2rem 5rem 2rem;
+  margin: 0 2rem 2rem 2rem;
   margin: auto;
   background-color: #a5a4a4;
 }
@@ -200,19 +202,15 @@
   flex-direction: column;
   height: 401px;
   margin-left: 2rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 .capabilities h3 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-size: 55px;
+  font-size: 35px;
   line-height: 100%;
   letter-spacing: 0%;
-}
-
-.div-right {
-  width: 343px;
 }
 
 .div-right p {
@@ -247,28 +245,22 @@
 /* media =============================== */
 @media (min-width: 768px) {
   #capa-section {
-    border-bottom: 1px solid #363535;
+    margin-top: 0;
   }
 
   .capa-div {
     width: 1224px;
     margin: auto;
     margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
   }
 
   .profile-pic {
     height: 700px;
-    background-color: #fff;
   }
   .profile-pic img {
     width: 43%;
-    border-radius: 12px;
     margin: 0 2rem 5rem 2rem;
     margin: auto;
-    background-color: #a5a4a4;
   }
 
   .capabilities {
@@ -279,44 +271,11 @@
   }
 
   .capabilities h3 {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
     font-size: 76px;
-    line-height: 100%;
-    letter-spacing: 0%;
   }
 
   .div-right {
     width: 600px;
-  }
-
-  .div-right p {
-    color: #a5a4a4;
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: 0%;
-  }
-
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 2rem;
-  }
-
-  .skills span {
-    background: #1a1a1a;
-    font-family: "Manrope", sans-serif;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    border: 1px solid #444;
-  }
-
-  .skills span:hover {
-    background-color: rgb(54, 62, 62);
   }
 }
 
@@ -326,7 +285,8 @@
 }
 
 .experience {
-  min-width: 343px;
+  min-width: 320;
+  max-width: 480;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -337,7 +297,7 @@
 .experience h3 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-size: 55px;
+  font-size: 35px;
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -347,7 +307,6 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  width: 343px;
 }
 
 .job {
@@ -440,19 +399,18 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 4rem 0;
-  width: 343px;
+  min-width: 320;
+  max-width: 480;
   height: 1200px;
   margin-left: 2rem;
 }
 
 .foot-div-11 {
-  width: 343px;
   display: flex;
   flex-direction: column;
 }
 
 .div-sepp p {
-  width: 343px;
   padding-right: 3rem;
   color: #a5a4a4;
   font-family: "Manrope", sans-serif;
@@ -466,7 +424,7 @@
 .div-sepp h2 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-size: 55px;
+  font-size: 35px;
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -498,7 +456,6 @@
 }
 
 .foot-div-11 p {
-  width: 550px;
   padding-right: 3rem;
   color: #a5a4a4;
   font-family: "Manrope", sans-serif;
@@ -510,8 +467,12 @@
 
 .foot-pp {
   position: absolute;
-  top: 236rem;
+  top: 233rem;
   margin-bottom: 3rem;
+}
+
+.foot-ppp {
+  padding-right: 0;
 }
 
 /* ============================== */
@@ -526,7 +487,6 @@
 
 label {
   margin-bottom: 5px;
-  width: 330px;
   padding-right: 3rem;
   color: #888;
   font-family: "Manrope", sans-serif;
@@ -615,7 +575,7 @@ button:hover {
   }
 
   .foot-pp {
-    top: 216rem;
+    top: 203.5rem;
   }
 
   /* ============================== */

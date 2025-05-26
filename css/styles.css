@@ -49,6 +49,7 @@ img {
   line-height: 150%;
   letter-spacing: -1%;
   color: #a5a4a4;
+  text-decoration: none;
 }
 
 .navbar .container {
@@ -153,7 +154,7 @@ img {
   margin-bottom: 0.5rem;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-size: 55px;
+  font-size: 35px;
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -186,12 +187,18 @@ img {
   display: flex;
   align-items: center;
   background-color: var(--accent);
-  color: #000;
   position: relative;
 }
 
 .btn-primary:hover {
   background-color: #448b86;
+}
+
+button a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
 }
 
 .div-icon-dad {
@@ -272,20 +279,19 @@ img {
 .projects {
   padding: 4rem 2rem 0 2rem;
   color: #fff;
-  width: 343px;
+  min-width: 320;
+  max-width: 480;
 }
 
 .projects h2 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 100%;
   letter-spacing: 0%;
 }
 
 .projects p {
-  width: 550px;
-  padding-right: 17rem;
   color: #a5a4a4;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
@@ -296,6 +302,8 @@ img {
 
 .projects-container {
   margin-top: 4rem;
+  min-width: 320;
+  max-width: 480;
 }
 
 .project-card {
@@ -303,10 +311,10 @@ img {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  width: 343px;
   gap: 2rem;
   margin-bottom: 2rem;
-  margin-right: 1rem;
+  min-width: 320;
+  max-width: 480;
 }
 
 .img-div {
@@ -314,12 +322,10 @@ img {
   flex-direction: column;
   gap: 1rem;
   background: #1a1a1a;
-  width: 100%;
 }
 
 .img-div button {
-  width: 200px;
-  padding: 0.6rem;
+  padding: 0.6rem 2rem;
   border-radius: 30px;
   border: none;
   background: #0a0a0a;
@@ -328,16 +334,12 @@ img {
 }
 
 .work-img {
-  width: 280px;
-  height: 260px;
   border-radius: 12px;
   margin: 0 2rem 0 2rem;
 }
 
 .work-details {
-  width: 343px;
   text-align: start;
-  padding-right: 5.5rem;
   margin-bottom: 2rem;
   font-family: "Manrope", sans-serif;
 }
@@ -353,15 +355,13 @@ img {
 
 h3 {
   margin-bottom: 1rem;
-  padding-right: 02rem;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 20px;
   line-height: 140%;
   letter-spacing: 0%;
 }
 
 .first-div p {
-  padding-right: 13rem;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
@@ -370,17 +370,16 @@ h3 {
 
 .year-role {
   display: flex;
+  justify-content: space-between;
   border-top: 1px solid #363535;
   font-weight: 500;
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0%;
   padding-top: 1rem;
-  width: 343px;
 }
 
 .p2 {
-  text-align: start;
   padding-bottom: 1rem;
 }
 
@@ -391,12 +390,10 @@ h3 {
 hr {
   border: none;
   border-top: 1px solid #363535;
-  width: 343px;
 }
 
 .link-div {
   display: flex;
-  width: 350px;
   gap: 2rem;
 }
 
@@ -404,7 +401,6 @@ hr {
   display: flex;
   text-decoration: none;
   gap: 0.7rem;
-  width: 10.5rem;
   color: var(--accent);
   font-weight: 400;
   font-size: 15px;
@@ -413,16 +409,15 @@ hr {
   text-transform: uppercase;
 }
 
-.aaaa {
+/* .aaaa {
   border-bottom: 3px solid #d4f063;
   width: 120px;
-}
+} */
 
 /* Media query ========================= */
 @media (min-width: 768px) {
   .projects {
     width: 1224px;
-    max-width: 1440px;
     margin: auto;
   }
 
@@ -432,14 +427,19 @@ hr {
 
   .projects p {
     font-size: 18px;
-    padding-right: 0;
+    width: 700px;
+    padding-right: 8rem;
+  }
+
+  .projects-container {
+    width: 1224px;
   }
 
   .project-card {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1224px;
+
     margin-bottom: 5rem;
   }
 
@@ -476,23 +476,15 @@ hr {
     letter-spacing: 0%;
   }
 
-  .year-role {
-    width: 550px;
-  }
-
-  .p2 {
-    text-align: end;
-    padding-bottom: 1rem;
-  }
-
-  .second-div h3 {
-    color: #a5a4a4;
+  .year-role p {
+    padding-right: 0;
   }
 
   hr {
-    border: none;
-    border-top: 1px solid #363535;
-    width: 550px;
+    width: 600px;
+  }
+
+  .p2 {
   }
 }
 /* ======================================== */
@@ -503,8 +495,9 @@ hr {
 }
 
 .about {
-  height: 810px;
-  width: 343px;
+  height: 840px;
+  min-width: 320;
+  max-width: 480;
   margin-left: 2rem;
 }
 
@@ -526,19 +519,16 @@ hr {
 }
 
 .div-one {
-  width: 400px;
   padding-left: 3rem;
 }
 
 .div-two {
-  width: 700px;
   padding-right: 2rem;
   font-family: "Manrope", sans-serif;
 }
 
 .card-1 {
   margin-bottom: 2rem;
-  width: 343px;
 }
 
 .card-1 h4 {
@@ -550,7 +540,7 @@ hr {
   letter-spacing: 0%;
 }
 
-.card-1-p {
+.about-me-p {
   color: #a5a4a4;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
@@ -571,6 +561,7 @@ hr {
 .akin-1 {
   width: 100%;
   border-radius: 20px;
+  padding-right: 2rem;
 }
 /* media query =========================== */
 @media (min-width: 768px) {
@@ -633,19 +624,19 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   padding: 4rem 0;
-  width: 343px;
+  min-width: 320;
+  max-width: 480;
   height: 1200px;
   margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .foot-div-1 {
-  width: 343px;
   display: flex;
   flex-direction: column;
 }
 
 .div-sep p {
-  width: 343px;
   padding-right: 3rem;
   color: #a5a4a4;
   font-family: "Manrope", sans-serif;
@@ -659,7 +650,7 @@ hr {
 .div-sep h2 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  font-size: 55px;
+  font-size: 35px;
   line-height: 100%;
   letter-spacing: 0%;
 }
@@ -691,8 +682,6 @@ hr {
 }
 
 .foot-div-1 p {
-  width: 550px;
-  padding-right: 3rem;
   color: #a5a4a4;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
@@ -703,8 +692,12 @@ hr {
 
 .foot-p {
   position: absolute;
-  top: 335rem;
+  top: 313rem;
   margin-bottom: 3rem;
+}
+
+.foot-pp {
+  padding-right: 0;
 }
 
 .foot-pp span {
@@ -722,7 +715,6 @@ hr {
 
 label {
   margin-bottom: 5px;
-  width: 330px;
   padding-right: 3rem;
   color: #888;
   font-family: "Manrope", sans-serif;
@@ -761,7 +753,7 @@ button {
   width: fit-content;
   transition: background-color 0.3s;
   font-family: "Manrope", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   letter-spacing: 0%;
@@ -795,17 +787,18 @@ button:hover {
     font-size: 76px;
   }
 
-  .foot-p {
-    top: 249rem;
-  }
-
-  /* ============================== */
   form {
     width: 600px;
   }
 
   label {
     width: 550px;
+  }
+
+  /* ============================== */
+
+  .foot-p {
+    top: 255rem;
   }
 }
 
